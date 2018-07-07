@@ -6,11 +6,12 @@ const app = express()
 // Require API routes
 const users = require('./routes/users')
 
-// Import API Routes
-app.use(users)
-app.set('port', (process.env.PORT || 3000));
+const PORT = (process.env.PORT || 3000)
+console.log('port: ' + PORT)
 
-console.log('port: ' + (process.env.PORT || 3000))
+// Import API Routes
+app.set('port', PORT);
+app.use(users)
 
 // Export the server middleware
 module.exports = {
