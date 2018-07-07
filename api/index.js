@@ -10,6 +10,8 @@ const users = require('./routes/users')
 app.use(users)
 app.set('port', (process.env.PORT || 3000));
 
+console.log('port: ' + (process.env.PORT || 3000))
+
 // Export the server middleware
 module.exports = {
   path: '/api',
