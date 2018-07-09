@@ -1,0 +1,16 @@
+{
+  "env": {
+    "HOST": {
+      "description": "read https://ja.nuxtjs.org/faq/heroku-deployment/",
+      "value": "0.0.0.0"
+    },
+    "NODE_ENV": {
+      "description": "read https://ja.nuxtjs.org/faq/heroku-deployment/",
+      "value": "production"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "read https://ja.nuxtjs.org/faq/heroku-deployment/",
+      "value": false
+    }
+  }
+}
